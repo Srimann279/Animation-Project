@@ -1,0 +1,46 @@
+.box {
+    width: 80px;
+    height: 90px;
+    position: relative;
+    background-color: red;
+    margin: 50px 50px;
+    animation-name: square;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes square {
+    0% {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+    }
+
+    25% {
+        background-color: blue;
+        left: 1100px;
+        top: 200px;
+    }
+
+    50% {
+        background-color: pink;
+        left: 1100px;
+        top: 100px;
+        border-radius: 50%;
+    }
+
+    75% {
+        background-color: black;
+        left: 50px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 50px;
+        top: 50px;
+    }
+}
